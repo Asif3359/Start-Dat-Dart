@@ -8,7 +8,8 @@ main() {
   print("");
   int result = sum(2, 4);
   int multiply = multiplication(2, 3);
-  print("Sum = $result, \nMultiplication = $multiply");
+  int teoRes = twoResult(sum(2, 5), multiplication(2, 2));
+  print("Sum = $result, \nMultiplication = $multiply, \nTwoMinus = $teoRes,");
 }
 
 // datr function
@@ -20,3 +21,7 @@ int sum(number1, number2) {
 
 // arow function in dart
 int multiplication(n1, n2) => n1 + n2;
+
+int twoResult(n1, n2) {
+  return n1 - n2;
+}
