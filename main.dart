@@ -12,6 +12,9 @@ main() {
   print("Sum = $result, \nMultiplication = $multiply, \nTwoMinus = $teoRes");
   print("");
   findPerimetter(4, 6);
+  print("");
+  int resultNamed = namedPeramitter();
+  print('Name result :$resultNamed');
 }
 
 // datr function
@@ -35,4 +38,8 @@ void findPerimetter(a, b) {
   int hight = b;
   int perometter = 2 * (length + hight);
   print("Perimetter = $perometter ");
+}
+
+int namedPeramitter({wigth = 0, hight = 0}) {
+  return wigth * hight;
 }
