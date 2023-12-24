@@ -10,6 +10,8 @@ main() {
   int multiply = multiplication(2, 3);
   int teoRes = twoResult(sum(2, 5), multiplication(2, 2));
   print("Sum = $result, \nMultiplication = $multiply, \nTwoMinus = $teoRes");
+  print("");
+  findPerimetter();
 }
 
 // datr function
@@ -24,4 +26,13 @@ int multiplication(n1, n2) => n1 + n2;
 
 int twoResult(n1, n2) {
   return n1 - n2;
+}
+
+// void function
+
+void findPerimetter() {
+  int length = 4;
+  int height = 6;
+  int perometter = 2 * (length + height);
+  print("Perimetter = $perometter ");
 }
