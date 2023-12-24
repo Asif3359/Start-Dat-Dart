@@ -15,6 +15,21 @@ main() {
   print("");
   int resultNamed = namedPeramitter();
   print('Name result :$resultNamed');
+
+//exception Handling  on known error
+  try {
+    int result = 12 ~/ 0;
+    print('Result =$result');
+  } on IntegerDivisionByZeroException {
+    print('cannot devided by zero');
+  }
+//exception Handling  on unknown error
+  try {
+    int result = 12 ~/ 0;
+    print('Result =$result');
+  } catch (e) {
+    print('Error :$e');
+  }
 }
 
 // datr function
@@ -43,3 +58,7 @@ void findPerimetter(a, b) {
 int namedPeramitter({wigth = 0, hight = 0}) {
   return wigth * hight;
 }
+
+
+//exception Handling 
+
