@@ -30,6 +30,8 @@ main() {
   } catch (e) {
     print('Error :$e');
   }
+  Car c = new Car();
+  c.disp();
 }
 
 // datr function
@@ -59,6 +61,14 @@ int namedPeramitter({wigth = 0, hight = 0}) {
   return wigth * hight;
 }
 
+//exception Handling
 
-//exception Handling 
+class Car {
+  // field
+  String engine = "E1001";
 
+  // function
+  void disp() {
+    print(engine);
+  }
+}
