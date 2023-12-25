@@ -32,6 +32,7 @@ main() {
   }
   Car c = new Car();
   c.disp();
+  c.front();
 }
 
 // datr function
@@ -66,9 +67,15 @@ int namedPeramitter({wigth = 0, hight = 0}) {
 class Car {
   // field
   String engine = "E1001";
+  int modle = 100;
 
   // function
   void disp() {
     print(engine);
+  }
+
+  // function
+  void front() {
+    print("$modle");
   }
 }
