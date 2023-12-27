@@ -33,6 +33,9 @@ main() {
   Car c = new Car();
   c.disp();
   c.front();
+
+  man m = new man();
+  m.male(123, 'Asif');
 }
 
 // datr function
@@ -78,4 +81,20 @@ class Car {
   void front() {
     print("$modle");
   }
+}
+
+class man {
+  // int id;
+  // String Name;
+  // String Gender;
+
+  void male(id, Name) {
+    print('Name: $id');
+    print('Name: $Name');
+  }
+
+  // void female() {
+  //   print('Name: $id');
+  //   print('Name: $Name');
+  // }
 }
